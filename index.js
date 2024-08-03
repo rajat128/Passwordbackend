@@ -14,7 +14,7 @@ process.on("uncaughtException", (err) => {
 
 connectDB()
 
-const server=app.listen(8015,()=>{
+app.listen(8015,()=>{
     console.log(`Server is working on http://localhost:${8015}`);
 })
 
@@ -22,7 +22,5 @@ const server=app.listen(8015,()=>{
 process.on("unhandledRejection",err=>{
     console.log(`Error: ${err.message}`);
     console.log(`Shutting down the server due to unhandled promise rejection`);
-    server.close(()=>{
-        process.exit(1)
-    })
+   
 })
