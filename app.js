@@ -13,5 +13,5 @@ app.use(cors({
 app.use(express.json())
 app.use('/api/v1/pass',passwordRouter)
 app.use('/api/v1/notes',notesRouter)
-app.use('/api/auth',router)
+app.use('/api/v1/auth',router)
 export{app}
