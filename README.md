@@ -1,4 +1,4 @@
-# Password Manager Backend<br/>
+# Password And Notes Manager Backend<br/>
 
 # Overview<br/>
 This is the backend API for a password and notes manager application. It provides a RESTful API for managing passwords and notes, and is designed to be used with a frontend client.<br/>
